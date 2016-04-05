@@ -41,7 +41,7 @@ plot(df$timestamp, df$Global_active_power, type="l", xlab = "", ylab = "Global A
 plot(df$timestamp, df$Sub_metering_1, type="l", xlab="", ylab="Energy sub metering")
 lines(df$timestamp, df$Sub_metering_2, col="red")
 lines(df$timestamp, df$Sub_metering_3, col="blue")
-legend("topright", legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), col=c("black", "red", "blue"), lwd=par("lwd"))
+legend("topright", legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), col=c("black", "red", "blue"), lwd=par("lwd"),cex = 0.7, bty = "n")
 
 #plot 3
 plot(df$timestamp, df$Voltage, type="l",
@@ -52,5 +52,4 @@ plot(df$timestamp, df$Global_reactive_power, type="l",
      xlab="datetime", ylab="Global_reactive_power")
 
 dev.off()
-
 
